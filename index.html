@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+
+	<title>Custom selects</title>	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Bootstrap -->
+	<!-- select2 -->
+	<link rel="stylesheet" href="vendor/select2/css/select2.css" type="text/css" />
+	<link rel="stylesheet" href="vendor/select2/css/select2-bootstrap.css" type="text/css" />
+	<!-- select2 -->
+	<!-- bootstrap-select -->
+	<link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css" type="text/css" />	
+	<!-- bootstrap-select -->
+
+	<link rel="stylesheet" href="css/custom.bootstrap-select.css" type="text/css" />
+</head>
+<body>
+
+	<div class="card bg-light mb-3" >
+		<div class="card-header">
+			<h1>Custom selects</h1>
+		</div>			
+		<div class="card-body">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<select id="name" class="form-control  custom-select2">
+							<option value="" selected>Choose a name</option> 								
+							<option value="1">Susie C. Duran</option>
+							<option value="2">Cynthia K. Bargo</option>
+							<option value="3">Brett K. Lee</option>
+							<option value="4">Kevin N. Gamez</option>
+							<option value="5">Joseph B. Finnegan</option>
+							<option value="6">Viki J. Davis</option>
+							<option value="7">Huong R. Holderman</option>
+							<option value="8">Paul V. Swanson</option>
+							<option value="9">Georgia J. Toney</option>
+							<option value="10">Lynn M. Rickett</option>
+							<option value="11">Helen R. Schiller</option>
+							<option value="12">Jeffery V. Humphrey</option>
+							<option value="13">Ronald L. Tidd</option>
+							<option value="14">Jodi D. Wiley</option>
+							<option value="15">Delores A. Isler</option>
+							<option value="16">Pinkie C. Robinson</option>
+							<option value="17">Martha A. Doyle</option>
+							<option value="18">Nathan S. Paez</option>
+							<option value="19">Tammy B. Lawson</option>
+							<option value="20">Launa D. Salazar</option>								
+						</select>
+					</div>					
+				</div>
+				<div class="col-md-5">
+					<div class="form-group">
+						<label for="state">State</label>							
+						<select id="state" class="form-control  custom-selectpicker  js-custom-selectpicker--state">								
+							<option value="">Choose a state</option>								
+						</select>
+						<input type="hidden" name="inputHiddenSelectedState" value="" id="inputHiddenSelectedState" />
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">  																													
+						<label for="usuario">City</label>
+							<div style="display: flex; width: 100%">									
+			                    <select id="usuario" class="form-control  custom-selectpicker  js-custom-selectpicker--city">
+			                        <optgroup label="State 1">
+			                            <option>City 1</option>                  
+			                            <option>City 2</option>
+			                            <option>City 3</option>
+			                            <option>City 4</option>
+			                        </optgroup>				                        
+			                    </select>	
+			                    <input type="hidden" name="inputHiddenSelectedCity" value="" id="inputHiddenSelectedCity" />
+		                    <div>
+		                    	<span class="spinner"></span>
+		                    </div>
+		            	</div>		                    
+                    </div>					
+				</div>					
+			</div>						
+		</div>
+	</div>
+
+<!-- jQuery and Bootstrap -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>		
+<!-- jQuery and Bootstrap -->
+<!-- select2 -->
+<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="vendor/select2/js/i18n/pt-BR.js"></script>
+<!-- select2 -->
+<!-- bootstrap-select -->
+<script type="text/javascript" src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<!-- bootstrap-select -->
+
+<script type="text/javascript" src="js/custom.select2.js"></script>
+<script type="text/javascript" src="js/custom.bootstrap-select.js"></script>
+<script type="text/javascript" src="js/select-state-city.js"></script>
+</body>
+</html>
